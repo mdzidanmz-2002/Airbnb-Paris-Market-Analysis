@@ -47,6 +47,20 @@ The objective is to identify market patterns and generate insights that can supp
 - **87.54% of hosts** have a single listing, while 12.46% manage multiple listings.
 - Élysée has the highest average listing price among the neighbourhoods, at **€546.42**.
 
+## Business Recommendations
+
+Based on the analysis, the following recommendations can help stakeholders better understand the Paris Airbnb market:
+
+1. **Evaluate neighbourhood pricing strategies:** Élysée has the highest average listing price (€546.42). Hosts and property managers should compare neighbourhood-level pricing patterns before setting their rates.
+
+2. **Focus on the dominant accommodation segment:** Entire homes and apartments account for 37,958 listings. This segment represents the largest part of the analysed market and deserves particular attention when studying competition and pricing.
+
+3. **Understand host portfolio distribution:** Since 87.54% of hosts manage a single listing, the market has a large proportion of individual hosts. Property managers can use this insight to distinguish individual hosting patterns from multi-listing operations.
+
+4. **Consider minimum-night requirements:** Listing minimum-night policies vary considerably. Hosts should review their minimum-stay requirements in relation to their property type and neighbourhood.
+
+These recommendations are based on listing-level patterns and should be treated as strategic considerations rather than proven effects on bookings or revenue.
+
 ## Power BI Dashboard
 
 The interactive dashboard contains three pages:
