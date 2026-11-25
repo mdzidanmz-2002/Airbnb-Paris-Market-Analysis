@@ -48,6 +48,64 @@ The following missing values were identified in the final dataset:
 
 **Data note:** Missing values were retained where filling them would require assumptions. The final dataset contains 43,334 records and was used for the subsequent analysis.
 
+## SQL Analysis
+
+The project uses MySQL 8.0 to analyse listing distribution, neighbourhood pricing, and host activity across Paris.
+
+### Query 1: Neighbourhood-wise Listing Distribution
+
+Identifies the number of Airbnb listings in each neighbourhood and calculates each neighbourhood's percentage share of the total market.
+
+```sql
+SELECT
+    neighbourhood,
+    COUNT(*) AS total_listings,
+    ROUND(
+        COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (),
+        2
+    ) AS market_share_percentage
+FROM airbnb_paris.listings
+GROUP BY neighbourhood
+ORDER BY total_listings DESC;
+```
+
+**Key finding:** Buttes-Montmartre has the highest listing supply, with 3,888 listings.
+
+### Query 2: Neighbourhood-wise Pricing Analysis
+
+Compares the average listing price and number of listings across Paris neighbourhoods.
+
+```sql
+SELECT
+    neighbourhood,
+    COUNT(*) AS total_listings,
+    ROUND(AVG(price), 2) AS average_price
+FROM airbnb_paris.listings
+GROUP BY neighbourhood
+ORDER BY average_price DESC;
+```
+
+**Key finding:** Élysée has the highest average listing price (€546.42), while Ménilmontant has the lowest (€198.36).
+
+### Query 3: Top 10 Hosts by Number of Listings
+
+Identifies the hosts managing the largest listing portfolios.
+
+```sql
+SELECT
+    host_id,
+    host_name,
+    COUNT(*) AS total_listings
+FROM airbnb_paris.listings
+GROUP BY host_id, host_name
+ORDER BY total_listings DESC
+LIMIT 10;
+```
+
+**Key finding:** Joffrey Sally ranks first with 234 listings, followed by Joffrey with 215 listings.
+
+These queries demonstrate the use of aggregate functions, grouping, sorting, window functions, and result limiting in SQL.
+
 ## Project Analysis
 
 ### 1. Market Overview
