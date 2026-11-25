@@ -56,10 +56,12 @@ The interactive dashboard contains three pages:
 
 ## Repository Structure
 
-- `SQL/` – SQL analysis scripts
-- `PowerBI/` – Power BI dashboard
-- `Documentation/` – Detailed project documentation
-- `Video/` – Dashboard walkthrough recording
+- `sql/` – SQL analysis scripts
+- `power bi/` – Power BI dashboard
+- `documentation/` – Project documentation
+- `Dataset/` – Cleaned dataset
+- `video/` – Dashboard walkthrough
+- `screenshots/` – Dashboard screenshots
 
 ## Important Limitations
 
@@ -73,10 +75,10 @@ This project demonstrates an end-to-end data analysis workflow, from data prepar
 ## Dashboard Preview
 
 ### 1. Market Overview
-![Market Overview](Screenshots/market-overview.png)
+![Market Overview](screenshots/market-overview.png)
 
 ### 2. Host & Review Analysis
-![Host & Review Analysis](Screenshots/host-review-analysis.png)
+![Host & Review Analysis](screenshots/host-review-analysis.png)
 
 ### 3. Pricing & Availability Insights
-![Pricing & Availability](Screenshots/pricing-availability.png)
+![Pricing & Availability](screenshots/pricing-availability.png)
