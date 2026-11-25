@@ -16,6 +16,38 @@ The objective is to identify market patterns and generate insights that can supp
 - **Records:** 43,334 listings
 - **Data type:** Listing-level data
 
+## Data Cleaning and Preparation
+
+The raw Paris Airbnb listings dataset was downloaded from [Inside Airbnb](https://insideairbnb.com/get-the-data/) and cleaned using Microsoft Excel and Power Query.
+
+### Dataset Overview
+
+- **Final records:** 43,334 listings
+- **Total columns:** 18
+- **Neighbourhoods covered:** 20
+- **Exact duplicate rows:** 0
+
+### Missing Value Analysis
+
+The following missing values were identified in the final dataset:
+
+| Column | Missing Records | Percentage |
+|---|---:|---:|
+| `minimum_nights` | 116 | 0.27% |
+| `last_review` | 7,393 | 17.06% |
+| `reviews_per_month` | 7,393 | 17.06% |
+| `license` | 5,693 | 13.14% |
+
+### Preparation Steps
+
+- Inspected all 18 columns for data-quality issues.
+- Reviewed and corrected data types to support analysis.
+- Checked for exact duplicate records.
+- Identified missing values in relevant columns.
+- Prepared the final dataset for MySQL analysis and Power BI visualisation.
+
+**Data note:** Missing values were retained where filling them would require assumptions. The final dataset contains 43,334 records and was used for the subsequent analysis.
+
 ## Project Analysis
 
 ### 1. Market Overview
