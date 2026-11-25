@@ -137,6 +137,10 @@ These queries demonstrate the use of aggregate functions, grouping, sorting, win
 - **87.54% of hosts** have a single listing, while 12.46% manage multiple listings.
 - Élysée has the highest average listing price among the neighbourhoods, at **€546.42**.
 
+## Project Walkthrough
+
+[Watch the Airbnb Paris Dashboard Walkthrough](video/Airbnb.mp4)
+
 ## Business Recommendations
 
 Based on the analysis, the following recommendations can help stakeholders better understand the Paris Airbnb market:
